@@ -40,7 +40,7 @@ int main() {
 
     for (auto it : sort_algo) {
         std::cout << "Testing on " << it.first << " sort ... ";
-        int n = 1000;
+        int n = 100000;
         int* a1 = new int[n];
         int* a2 = new int[n];
         generate(a1, a2, n);
@@ -48,10 +48,12 @@ int main() {
         it.second(a1, n);
         std::sort(a2, a2 + n);
 
-        // bool res = compare(a1, a2, n);
-
-        // assert(res);
-        std::cout << "Passed!\n";
+        bool res = compare(a1, a2, n);
+        if (res == true) {
+            std::cout << "Passed!\n";
+        } else {
+            std::cout << "Failed!\n";
+        }
 
         delete[] a1;
         delete[] a2;
