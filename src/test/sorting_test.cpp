@@ -5,7 +5,10 @@
 #include <map>
 #include <string>
 #include <functional>
-#include <assert.h>
+
+// uncomment to disable assert()
+// #define NDEBUG
+#include <cassert>
 
 void generate(int* &a1, int* &a2, int n) {
     for (int i = 0; i < n; i++) {
@@ -48,13 +51,9 @@ int main() {
         it.second(a1, n);
         std::sort(a2, a2 + n);
 
-        bool res = compare(a1, a2, n);
-        if (res == true) {
-            std::cout << "Passed!\n";
-        } else {
-            std::cout << "Failed!\n";
-        }
-
+        assert(compare(a1, a2,n) == true);
+        std::cout << "Oh yes, Passed!\n";
+        
         delete[] a1;
         delete[] a2;
     }
