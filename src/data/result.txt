@@ -1,0 +1,352 @@
+Input order: nsorted
+=============================
+Input size: 10000
+-----------------------------
+bubble-sort	: 61.321ms	 | 9999 comparisons
+counting-sort	: 0.175ms	 | 19999 comparisons
+flash-sort	: 0.396ms	 | 15500 comparisons
+heap-sort	: 1.325ms	 | 131956 comparisons
+insertion-sort	: 0.073ms	 | 0 comparisons
+merge-sort	: 0.936ms	 | 69008 comparisons
+quick-sort	: 0.369ms	 | 123617 comparisons
+radix-sort	: 0.934ms	 | 130039 comparisons
+selection-sort	: 101.666ms	 | 49995000 comparisons
+shaker-sort	: 0.061ms	 | 9999 comparisons
+shell-sort	: 0.504ms	 | 0 comparisons
+-----------------------------
+Input size: 30000
+-----------------------------
+bubble-sort	: 855.78ms	 | 29999 comparisons
+counting-sort	: 0.384ms	 | 59999 comparisons
+flash-sort	: 1.045ms	 | 46500 comparisons
+heap-sort	: 4.193ms	 | 440100 comparisons
+insertion-sort	: 0.225ms	 | 0 comparisons
+merge-sort	: 3.328ms	 | 227728 comparisons
+quick-sort	: 1.505ms	 | 417233 comparisons
+radix-sort	: 3.299ms	 | 480049 comparisons
+selection-sort	: 899.124ms	 | 449985000 comparisons
+shaker-sort	: 0.072ms	 | 29999 comparisons
+shell-sort	: 1.373ms	 | 0 comparisons
+-----------------------------
+Input size: 50000
+-----------------------------
+bubble-sort	: 2447.54ms	 | 49999 comparisons
+counting-sort	: 0.629ms	 | 99999 comparisons
+flash-sort	: 2.062ms	 | 77500 comparisons
+heap-sort	: 8.256ms	 | 773304 comparisons
+insertion-sort	: 0.287ms	 | 0 comparisons
+merge-sort	: 5.489ms	 | 401952 comparisons
+quick-sort	: 1.809ms	 | 734465 comparisons
+radix-sort	: 6.204ms	 | 800049 comparisons
+selection-sort	: 2490ms	 | 1249975000 comparisons
+shaker-sort	: 0.164ms	 | 49999 comparisons
+shell-sort	: 2.532ms	 | 0 comparisons
+-----------------------------
+Input size: 100000
+-----------------------------
+bubble-sort	: 10743ms	 | 99999 comparisons
+counting-sort	: 1.222ms	 | 199999 comparisons
+flash-sort	: 3.433ms	 | 155000 comparisons
+heap-sort	: 16.501ms	 | 1650854 comparisons
+insertion-sort	: 0.388ms	 | 0 comparisons
+merge-sort	: 11.804ms	 | 853904 comparisons
+quick-sort	: 3.494ms	 | 1568929 comparisons
+radix-sort	: 11.929ms	 | 1600049 comparisons
+selection-sort	: 10528.4ms	 | 4999950000 comparisons
+shaker-sort	: 0.364ms	 | 99999 comparisons
+shell-sort	: 5.165ms	 | 0 comparisons
+-----------------------------
+Input size: 300000
+-----------------------------
+bubble-sort	: 96486.5ms	 | 299999 comparisons
+counting-sort	: 3.476ms	 | 599999 comparisons
+flash-sort	: 10.397ms	 | 465000 comparisons
+heap-sort	: 51.142ms	 | 5411160 comparisons
+insertion-sort	: 0.967ms	 | 0 comparisons
+merge-sort	: 35.044ms	 | 2797264 comparisons
+quick-sort	: 11.091ms	 | 5175713 comparisons
+radix-sort	: 39.198ms	 | 5700059 comparisons
+selection-sort	: 89954.9ms	 | 44999850000 comparisons
+shaker-sort	: 0.747ms	 | 299999 comparisons
+shell-sort	: 18.798ms	 | 0 comparisons
+-----------------------------
+Input size: 500000
+-----------------------------
+bubble-sort	: 264862ms	 | 499999 comparisons
+counting-sort	: 5.606ms	 | 999999 comparisons
+flash-sort	: 18.129ms	 | 775000 comparisons
+heap-sort	: 86.011ms	 | 9355700 comparisons
+insertion-sort	: 1.681ms	 | 0 comparisons
+merge-sort	: 58.038ms	 | 4783216 comparisons
+quick-sort	: 19.556ms	 | 8975713 comparisons
+radix-sort	: 64.642ms	 | 9500059 comparisons
+selection-sort	: 273903ms	 | 124999750000 comparisons
+shaker-sort	: 1.564ms	 | 499999 comparisons
+shell-sort	: 41.384ms	 | 0 comparisons
+-----------------------------
+=============================
+
+Input order: rand
+=============================
+Input size: 10000
+-----------------------------
+bubble-sort	: 336.583ms	 | 9999 comparisons
+counting-sort	: 0.305ms	 | 19999 comparisons
+flash-sort	: 0.555ms	 | 13717 comparisons
+heap-sort	: 1.526ms	 | 131201 comparisons
+insertion-sort	: 0.082ms	 | 0 comparisons
+merge-sort	: 1.167ms	 | 70555 comparisons
+quick-sort	: 0.606ms	 | 119117 comparisons
+radix-sort	: 1.39ms	 | 130039 comparisons
+selection-sort	: 127.01ms	 | 49995000 comparisons
+shaker-sort	: 0.052ms	 | 9999 comparisons
+shell-sort	: 0.625ms	 | 0 comparisons
+-----------------------------
+Input size: 30000
+-----------------------------
+bubble-sort	: 3703.8ms	 | 29999 comparisons
+counting-sort	: 1.177ms	 | 59999 comparisons
+flash-sort	: 1.923ms	 | 41041 comparisons
+heap-sort	: 7.234ms	 | 440641 comparisons
+insertion-sort	: 0.201ms	 | 0 comparisons
+merge-sort	: 10.382ms	 | 233208 comparisons
+quick-sort	: 2.96ms	 | 404661 comparisons
+radix-sort	: 4.682ms	 | 480049 comparisons
+selection-sort	: 1211.25ms	 | 449985000 comparisons
+shaker-sort	: 0.169ms	 | 29999 comparisons
+shell-sort	: 1.723ms	 | 0 comparisons
+-----------------------------
+Input size: 50000
+-----------------------------
+bubble-sort	: 9457.49ms	 | 49999 comparisons
+counting-sort	: 1.243ms	 | 99999 comparisons
+flash-sort	: 2.493ms	 | 68539 comparisons
+heap-sort	: 9.641ms	 | 774353 comparisons
+insertion-sort	: 0.231ms	 | 0 comparisons
+merge-sort	: 5.506ms	 | 408608 comparisons
+quick-sort	: 2.729ms	 | 711559 comparisons
+radix-sort	: 9.226ms	 | 800049 comparisons
+selection-sort	: 3191.6ms	 | 1249975000 comparisons
+shaker-sort	: 0.201ms	 | 49999 comparisons
+shell-sort	: 4.091ms	 | 0 comparisons
+-----------------------------
+Input size: 100000
+-----------------------------
+bubble-sort	: 39194.1ms	 | 99999 comparisons
+counting-sort	: 3.004ms	 | 199999 comparisons
+flash-sort	: 7.443ms	 | 137127 comparisons
+heap-sort	: 23.317ms	 | 1649031 comparisons
+insertion-sort	: 0.46ms	 | 0 comparisons
+merge-sort	: 16.797ms	 | 867180 comparisons
+quick-sort	: 4.392ms	 | 1522923 comparisons
+radix-sort	: 13.755ms	 | 1600049 comparisons
+selection-sort	: 14196.4ms	 | 4999950000 comparisons
+shaker-sort	: 0.293ms	 | 99999 comparisons
+shell-sort	: 6.723ms	 | 0 comparisons
+-----------------------------
+Input size: 300000
+-----------------------------
+bubble-sort	: 400550ms	 | 299999 comparisons
+counting-sort	: 10.659ms	 | 599999 comparisons
+flash-sort	: 20.279ms	 | 410769 comparisons
+heap-sort	: 73.773ms	 | 5413139 comparisons
+insertion-sort	: 1.534ms	 | 0 comparisons
+merge-sort	: 48.652ms	 | 2848483 comparisons
+quick-sort	: 22.285ms	 | 5043437 comparisons
+radix-sort	: 59.195ms	 | 5700059 comparisons
+selection-sort	: 128159ms	 | 44999850000 comparisons
+shaker-sort	: 0.944ms	 | 299999 comparisons
+shell-sort	: 27.12ms	 | 0 comparisons
+-----------------------------
+Input size: 500000
+-----------------------------
+bubble-sort	: 1.04908e+06ms	 | 499999 comparisons
+counting-sort	: 11.067ms	 | 999999 comparisons
+flash-sort	: 23.69ms	 | 685732 comparisons
+heap-sort	: 90.32ms	 | 9374353 comparisons
+insertion-sort	: 1.682ms	 | 0 comparisons
+merge-sort	: 60.083ms	 | 4882690 comparisons
+quick-sort	: 23.579ms	 | 8773257 comparisons
+radix-sort	: 69.83ms	 | 9500059 comparisons
+selection-sort	: 246634ms	 | 124999750000 comparisons
+shaker-sort	: 1.122ms	 | 499999 comparisons
+shell-sort	: 30.771ms	 | 0 comparisons
+-----------------------------
+=============================
+
+Input order: rev
+=============================
+Input size: 10000
+-----------------------------
+bubble-sort	: 257.177ms	 | 9999 comparisons
+counting-sort	: 0.176ms	 | 19999 comparisons
+flash-sort	: 0.401ms	 | 15500 comparisons
+heap-sort	: 1.331ms	 | 131956 comparisons
+insertion-sort	: 0.089ms	 | 0 comparisons
+merge-sort	: 1.033ms	 | 69008 comparisons
+quick-sort	: 0.374ms	 | 123617 comparisons
+radix-sort	: 0.935ms	 | 130039 comparisons
+selection-sort	: 99.3ms	 | 49995000 comparisons
+shaker-sort	: 0.069ms	 | 9999 comparisons
+shell-sort	: 0.727ms	 | 0 comparisons
+-----------------------------
+Input size: 30000
+-----------------------------
+bubble-sort	: 2311ms	 | 29999 comparisons
+counting-sort	: 0.388ms	 | 59999 comparisons
+flash-sort	: 1.133ms	 | 46500 comparisons
+heap-sort	: 4.327ms	 | 440100 comparisons
+insertion-sort	: 0.146ms	 | 0 comparisons
+merge-sort	: 2.923ms	 | 227728 comparisons
+quick-sort	: 1.025ms	 | 417233 comparisons
+radix-sort	: 3.199ms	 | 480049 comparisons
+selection-sort	: 899.08ms	 | 449985000 comparisons
+shaker-sort	: 0.126ms	 | 29999 comparisons
+shell-sort	: 1.378ms	 | 0 comparisons
+-----------------------------
+Input size: 50000
+-----------------------------
+bubble-sort	: 6417.34ms	 | 49999 comparisons
+counting-sort	: 0.599ms	 | 99999 comparisons
+flash-sort	: 1.783ms	 | 77500 comparisons
+heap-sort	: 7.744ms	 | 773304 comparisons
+insertion-sort	: 0.195ms	 | 0 comparisons
+merge-sort	: 5.108ms	 | 401952 comparisons
+quick-sort	: 1.735ms	 | 734465 comparisons
+radix-sort	: 5.546ms	 | 800049 comparisons
+selection-sort	: 2503.38ms	 | 1249975000 comparisons
+shaker-sort	: 0.251ms	 | 49999 comparisons
+shell-sort	: 2.613ms	 | 0 comparisons
+-----------------------------
+Input size: 100000
+-----------------------------
+bubble-sort	: 25876.5ms	 | 99999 comparisons
+counting-sort	: 1.332ms	 | 199999 comparisons
+flash-sort	: 3.664ms	 | 155000 comparisons
+heap-sort	: 16.832ms	 | 1650854 comparisons
+insertion-sort	: 0.413ms	 | 0 comparisons
+merge-sort	: 10.845ms	 | 853904 comparisons
+quick-sort	: 3.967ms	 | 1568929 comparisons
+radix-sort	: 11.533ms	 | 1600049 comparisons
+selection-sort	: 10604.6ms	 | 4999950000 comparisons
+shaker-sort	: 0.258ms	 | 99999 comparisons
+shell-sort	: 5.401ms	 | 0 comparisons
+-----------------------------
+Input size: 300000
+-----------------------------
+bubble-sort	: 247546ms	 | 299999 comparisons
+counting-sort	: 4.639ms	 | 599999 comparisons
+flash-sort	: 13.498ms	 | 465000 comparisons
+heap-sort	: 60.584ms	 | 5411160 comparisons
+insertion-sort	: 1.16ms	 | 0 comparisons
+merge-sort	: 45.926ms	 | 2797264 comparisons
+quick-sort	: 13.252ms	 | 5175713 comparisons
+radix-sort	: 47.775ms	 | 5700059 comparisons
+selection-sort	: 103084ms	 | 44999850000 comparisons
+shaker-sort	: 0.785ms	 | 299999 comparisons
+shell-sort	: 20.899ms	 | 0 comparisons
+-----------------------------
+Input size: 500000
+-----------------------------
+bubble-sort	: 675847ms	 | 499999 comparisons
+counting-sort	: 5.222ms	 | 999999 comparisons
+flash-sort	: 19.532ms	 | 775000 comparisons
+heap-sort	: 85.93ms	 | 9355700 comparisons
+insertion-sort	: 1.913ms	 | 0 comparisons
+merge-sort	: 60.458ms	 | 4783216 comparisons
+quick-sort	: 20.007ms	 | 8975713 comparisons
+radix-sort	: 65.806ms	 | 9500059 comparisons
+selection-sort	: 249565ms	 | 124999750000 comparisons
+shaker-sort	: 1.089ms	 | 499999 comparisons
+shell-sort	: 30.069ms	 | 0 comparisons
+-----------------------------
+=============================
+
+Input order: sorted
+=============================
+Input size: 10000
+-----------------------------
+bubble-sort	: 0.054ms	 | 9999 comparisons
+counting-sort	: 0.161ms	 | 19999 comparisons
+flash-sort	: 0.403ms	 | 15500 comparisons
+heap-sort	: 1.45ms	 | 131956 comparisons
+insertion-sort	: 0.072ms	 | 0 comparisons
+merge-sort	: 0.924ms	 | 69008 comparisons
+quick-sort	: 0.365ms	 | 123617 comparisons
+radix-sort	: 1.041ms	 | 130039 comparisons
+selection-sort	: 100.803ms	 | 49995000 comparisons
+shaker-sort	: 0.061ms	 | 9999 comparisons
+shell-sort	: 0.562ms	 | 0 comparisons
+-----------------------------
+Input size: 30000
+-----------------------------
+bubble-sort	: 0.122ms	 | 29999 comparisons
+counting-sort	: 0.388ms	 | 59999 comparisons
+flash-sort	: 1.02ms	 | 46500 comparisons
+heap-sort	: 4.297ms	 | 440100 comparisons
+insertion-sort	: 0.188ms	 | 0 comparisons
+merge-sort	: 3.019ms	 | 227728 comparisons
+quick-sort	: 1.208ms	 | 417233 comparisons
+radix-sort	: 3.282ms	 | 480049 comparisons
+selection-sort	: 892.071ms	 | 449985000 comparisons
+shaker-sort	: 0.108ms	 | 29999 comparisons
+shell-sort	: 1.349ms	 | 0 comparisons
+-----------------------------
+Input size: 50000
+-----------------------------
+bubble-sort	: 0.198ms	 | 49999 comparisons
+counting-sort	: 0.558ms	 | 99999 comparisons
+flash-sort	: 1.732ms	 | 77500 comparisons
+heap-sort	: 7.729ms	 | 773304 comparisons
+insertion-sort	: 0.229ms	 | 0 comparisons
+merge-sort	: 5.042ms	 | 401952 comparisons
+quick-sort	: 1.773ms	 | 734465 comparisons
+radix-sort	: 5.817ms	 | 800049 comparisons
+selection-sort	: 2461.44ms	 | 1249975000 comparisons
+shaker-sort	: 0.236ms	 | 49999 comparisons
+shell-sort	: 2.488ms	 | 0 comparisons
+-----------------------------
+Input size: 100000
+-----------------------------
+bubble-sort	: 0.278ms	 | 99999 comparisons
+counting-sort	: 1.067ms	 | 199999 comparisons
+flash-sort	: 3.856ms	 | 155000 comparisons
+heap-sort	: 15.993ms	 | 1650854 comparisons
+insertion-sort	: 0.409ms	 | 0 comparisons
+merge-sort	: 10.134ms	 | 853904 comparisons
+quick-sort	: 3.407ms	 | 1568929 comparisons
+radix-sort	: 10.966ms	 | 1600049 comparisons
+selection-sort	: 9729.75ms	 | 4999950000 comparisons
+shaker-sort	: 0.266ms	 | 99999 comparisons
+shell-sort	: 5.025ms	 | 0 comparisons
+-----------------------------
+Input size: 300000
+-----------------------------
+bubble-sort	: 1.431ms	 | 299999 comparisons
+counting-sort	: 5.745ms	 | 599999 comparisons
+flash-sort	: 12.308ms	 | 465000 comparisons
+heap-sort	: 89.555ms	 | 5411160 comparisons
+insertion-sort	: 0.996ms	 | 0 comparisons
+merge-sort	: 48.982ms	 | 2797264 comparisons
+quick-sort	: 10.776ms	 | 5175713 comparisons
+radix-sort	: 40.546ms	 | 5700059 comparisons
+selection-sort	: 88016.8ms	 | 44999850000 comparisons
+shaker-sort	: 0.668ms	 | 299999 comparisons
+shell-sort	: 18.287ms	 | 0 comparisons
+-----------------------------
+Input size: 500000
+-----------------------------
+bubble-sort	: 1.214ms	 | 499999 comparisons
+counting-sort	: 4.934ms	 | 999999 comparisons
+flash-sort	: 17.077ms	 | 775000 comparisons
+heap-sort	: 85.493ms	 | 9355700 comparisons
+insertion-sort	: 1.67ms	 | 0 comparisons
+merge-sort	: 57.099ms	 | 4783216 comparisons
+quick-sort	: 19.612ms	 | 8975713 comparisons
+radix-sort	: 68.002ms	 | 9500059 comparisons
+selection-sort	: 244677ms	 | 124999750000 comparisons
+shaker-sort	: 1.164ms	 | 499999 comparisons
+shell-sort	: 30.572ms	 | 0 comparisons
+-----------------------------
+=============================
+
