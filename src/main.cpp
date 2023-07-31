@@ -89,6 +89,7 @@ int parseArgs(int argc, char** argv) {
 map<string, function<void(int*&, int)>> sortAlgorithms;
 map<string, function<long long(int*&, int)>> sortAlgorithmsWithComparison;
 map<string, int> inputOrderMap;
+map<string, string> dataTypeName;
 
 // Initialize the sorting algorithms and input order map
 void init() {
@@ -117,9 +118,14 @@ void init() {
     sortAlgorithmsWithComparison["flash-sort"] = flashSortComp;
 
     inputOrderMap["-rand"] = 0;
-    inputOrderMap["-nsorted"] = 3;
     inputOrderMap["-sorted"] = 1;
     inputOrderMap["-rev"] = 2;
+    inputOrderMap["-nsorted"] = 3;
+
+    dataTypeName["-rand"] = "Randomize";
+    dataTypeName["-sorted"] = "Sorted";
+    dataTypeName["-nsorted"] = "Nearly Sorted";
+    dataTypeName["-rev"] = "Reversed";
 }
 
 // Read data from the input file
@@ -146,6 +152,7 @@ long long computeComparison(function<long long(int*&, int)> func, int* data, int
     return func(data, n);
 }
 
+// COMMAND 1: [Execution file] -a [Algorithm] [Given input] [Output parameter(s)]
 // Perform sorting algorithm analysis with input data from a file
 void analyzeAlgorithmMode() {
     int* data;
@@ -156,6 +163,7 @@ void analyzeAlgorithmMode() {
     cout << "Algorithm: " << algorithm << '\n';
     cout << "Input file: " << inputFile << '\n';
     cout << "Input size: " << dataSize << '\n';
+
 
     if (outputParam == "-time") {
         cout << "Running time: " << computeTime(sortAlgorithms[algorithm], data, dataSize) << "ms" << '\n';
@@ -204,6 +212,7 @@ void analyzeAlgorithmWithInputSizeAndOrderMode() {
     std::cout << "Input size: " << dataSize << '\n';
     inputOrder.erase(0, 1); // remove '-'
     std::cout << "Input order: " << inputOrder << '\n';
+    cout << "-----------------------------" << '\n';
 
     if (outputParam == "-time") {
         auto startTime = std::chrono::high_resolution_clock::now();
@@ -238,7 +247,7 @@ void analyzeAlgorithmWithInputSizeAndOrderMode() {
 // Perform sorting algorithm analysis with various input orders and sizes
 void analyzeAlgorithmWithVariousInputOrders() {
     int dataSize = inputSize;
-
+    
     cout << "ALGORITHM MODE" << '\n';
     cout << "Algorithm: " << algorithm << '\n';
     cout << "Input size: " << dataSize << '\n';
@@ -290,8 +299,8 @@ void compareAlgorithmsOnSameInput() {
     cout << "Algorithm: " << algorithm1 << " | " << algorithm2 << '\n';
     cout << "Input file: " << inputFile << '\n';
     cout << "Input size: " << dataSize << '\n';
-
     cout << "-----------------------------" << '\n';
+
     double timeAlgorithm1 = computeTime(sortAlgorithms[algorithm1], data, dataSize);
     double timeAlgorithm2 = computeTime(sortAlgorithms[algorithm2], data, dataSize);
 
@@ -300,6 +309,7 @@ void compareAlgorithmsOnSameInput() {
 
     cout << "Running time: " << timeAlgorithm1 << "ms | " << timeAlgorithm2 << "ms" << '\n';
     cout << "Comparisons: " << comparisonsAlgorithm1 << " | " << comparisonsAlgorithm2 << '\n';
+    
     delete[] data;
 }
 
@@ -325,8 +335,8 @@ void compareAlgorithmsOnGeneratedInput() {
     cout << "Input size: " << dataSize << '\n';
     inputOrder.erase(0, 1); // remove '-'
     cout << "Input order: " << inputOrder << '\n';
-
     cout << "-----------------------------" << '\n';
+
     double timeAlgorithm1 = computeTime(sortAlgorithms[algorithm1], data, dataSize);
     double timeAlgorithm2 = computeTime(sortAlgorithms[algorithm2], data, dataSize);
 
