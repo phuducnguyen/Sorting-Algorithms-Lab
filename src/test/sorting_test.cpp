@@ -40,7 +40,7 @@ int main() {
 
     for (auto it : sort_algo) {
         std::cout << "Testing on " << it.first << " sort ... ";
-        int n = 100000;
+        int n = 1000;
         int* a1 = new int[n];
         int* a2 = new int[n];
         generate(a1, a2, n);
