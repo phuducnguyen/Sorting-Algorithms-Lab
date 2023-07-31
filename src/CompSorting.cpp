@@ -1,4 +1,6 @@
 #include <vector>
+#include <algorithm> // For std::max and std::min
+
 using namespace std;
 
 // Utility function to swap two elements
@@ -253,6 +255,38 @@ long long quickSortComp(int* &arr, int n) {
 
 // Counting Sort
 // Time Complexity: O(n + k), where k is the range of elements (max - min + 1)
+long long countingSortComp(int* &arr, int n, int exp) {
+    long long comparisons = 0;
+    int* out = new int[n];
+    int* count = new int[10];
+
+    for (int i = 0; i < n; i++)
+        out[i] = 0;
+    for (int i = 0; i < 10; i++)
+        count[i] = 0;
+
+    for (int i = 0; i < n; i++) {
+        count[(arr[i] / exp) % 10]++;
+    	comparisons++;	 // Comparison in the for loop
+    }
+    for (int i = 1; i < 10; i++) {
+        count[i] += count[i - 1];
+    	comparisons++;	// Comparison in the for loop
+    }
+    for (int i = n - 1; i >= 0; i--) {
+        out[count[(arr[i] / exp) % 10] - 1] = arr[i];
+        count[(arr[i] / exp) % 10]--;
+    	comparisons += 2; // Two comparisons in the for loop
+    }
+    for (int i = 0; i < n; i++)
+        arr[i] = out[i];
+    	comparisons++; // Comparison and assigment in the for loop
+
+    delete[] out, count;
+
+    return comparisons;
+}
+
 long long countingSortComp(int* &arr, int n) {
     long long cnt = 0;
     int maxVal = arr[0];
