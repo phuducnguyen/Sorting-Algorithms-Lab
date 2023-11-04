@@ -7,7 +7,7 @@
 using namespace std;
 
 template <class T>
-void _swap(T &a, T &b);
+void HoanVi(T &a, T &b);
 
 // Hàm phát sinh mảng dữ liệu ngẫu nhiên
 void GenerateRandomData(int a[], int n);
